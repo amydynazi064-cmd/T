@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<title>Crash Trader</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>CRASH TRADER</h1>
+<div>موجودی: <span id="balance">10000</span> سکه</div>
+</header>
+
+
+<div class="panel">
+
+<div class="multiplier">
+×<span id="multi">1.00</span>
+</div>
+
+<canvas id="chart"></canvas>
+
+
+<div class="buttons">
+<button onclick="startGame()">شروع راند</button>
+<button onclick="cashOut()">خروج</button>
+</div>
+
+
+<div class="info">
+<p>سود فعلی: <span id="profit">0</span></p>
+<p>وضعیت: <span id="status">آماده</span></p>
+</div>
+
+
+<h3>تاریخچه</h3>
+<div id="history"></div>
+
+</div>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
